@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1064436803422",
+    "project_id": "workplacewonders-87165",
+    "storage_bucket": "workplacewonders-87165.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064436803422:android:883536295cea2d5ccb51cf",
+        "android_client_info": {
+          "package_name": "com.example.workplacewonders"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZXMkGZZesGdLw3t4T1qbjNU97gA3Y39I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

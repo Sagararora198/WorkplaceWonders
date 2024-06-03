@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/employee_navigation"
+    app:startDestination="@id/employeeViewAssetFragment">
+
+    <fragment
+        android:id="@+id/employeeViewAssetFragment"
+        android:name="com.example.workplacewonders.ui.employee.EmployeeViewAssetFragment"
+        android:label="EmployeeViewAssetFragment" >
+
+        <action
+            android:id="@+id/action_employeeViewAssetFragment_to_employeeAssetDetailFragment"
+            app:destination="@id/employeeAssetDetailFragment" >
+            <argument
+                android:name="assetId"
+                app:argType="string"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/employeeAssetDetailFragment"
+        android:name="com.example.workplacewonders.ui.employee.EmployeeAssetDetailFragment"
+        android:label="EmployeeAssetDetailFragment" />
+</navigation>
