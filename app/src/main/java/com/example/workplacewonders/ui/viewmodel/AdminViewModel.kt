@@ -7,10 +7,16 @@ import com.example.workplacewonders.data.model.Asset
 import com.example.workplacewonders.data.model.Review
 import com.example.workplacewonders.data.repository.AssetNReviewRepository
 import com.example.workplacewonders.data.repository.UserRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class AdminViewModel:ViewModel() {
-    private val repository: AssetNReviewRepository = AssetNReviewRepository()
-    private val repo:UserRepository = UserRepository()
+@HiltViewModel
+class AdminViewModel @Inject constructor(
+    private val repository: AssetNReviewRepository,
+    private val repo:UserRepository
+):ViewModel() {
+
+
     private val _assets = MutableLiveData<List<Asset>>()
     val assets:LiveData<List<Asset>> = _assets
 

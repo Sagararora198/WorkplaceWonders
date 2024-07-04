@@ -2,7 +2,9 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.google.gms.google.services)
+    id("com.google.dagger.hilt.android")
     id("kotlin-kapt")
+
 
 }
 
@@ -56,11 +58,19 @@ dependencies {
     implementation ("com.github.bumptech.glide:glide:4.12.0")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
     implementation ("com.google.android.material:material:1.12.0")
+    implementation ("com.google.dagger:hilt-android:2.46.1")
+    kapt ("com.google.dagger:hilt-compiler:2.46.1")
     implementation(libs.firebase.auth)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.firebase.storage)
     testImplementation(libs.junit)
+    testImplementation ("org.mockito:mockito-inline:4.3.1")
+    testImplementation ("org.mockito:mockito-core:4.3.1")
+    testImplementation ("org.jetbrains.kotlin:kotlin-test-junit:1.5.20")
+    testImplementation ("androidx.arch.core:core-testing:2.2.0")
+    testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+    testImplementation ("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }

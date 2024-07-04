@@ -5,8 +5,10 @@ import com.example.workplacewonders.data.firebase.FirebaseSerivce
 import com.example.workplacewonders.data.model.Asset
 import com.example.workplacewonders.data.model.Review
 
-class AssetNReviewRepository (){
-    private val firebaseService:FirebaseSerivce = FirebaseSerivce()
+class AssetNReviewRepository (
+    private val firebaseService: FirebaseSerivce
+){
+
     fun addAsset(asset:Asset){
         firebaseService.addAsset(asset)
     }

@@ -17,7 +17,9 @@ import com.example.workplacewonders.databinding.ActivityLoginBinding
 import com.example.workplacewonders.ui.admin.AdminActivity
 import com.example.workplacewonders.ui.employee.EmployeeActivity
 import com.example.workplacewonders.ui.viewmodel.LoginViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding:ActivityLoginBinding
     private val viewModel:LoginViewModel by viewModels()

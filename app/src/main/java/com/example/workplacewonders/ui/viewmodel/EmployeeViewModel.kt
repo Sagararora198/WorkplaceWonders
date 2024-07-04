@@ -6,9 +6,16 @@ import androidx.lifecycle.ViewModel
 import com.example.workplacewonders.data.model.Asset
 import com.example.workplacewonders.data.model.Review
 import com.example.workplacewonders.data.repository.AssetNReviewRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class EmployeeViewModel:ViewModel() {
-    private val repository: AssetNReviewRepository = AssetNReviewRepository()
+@HiltViewModel
+class EmployeeViewModel @Inject constructor(
+    private val repository:AssetNReviewRepository
+) :ViewModel(
+
+) {
+
 
 
     private val _assets = MutableLiveData<List<Asset>>()
